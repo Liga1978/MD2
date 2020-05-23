@@ -23,7 +23,7 @@ input {
     background: lavender;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 50px;
+    grid-template-rows: 100px;
     grid-template-areas:  
     "global brand tools";    
 }}
@@ -93,7 +93,7 @@ input {
 
   }
 
-    @media only screen and (min-width: 576px){
+    @media only screen and (min-width: 576px) {
     .herof {
         grid-area: hf;
         background-color: lavender;
@@ -114,7 +114,7 @@ input {
       
       }
 
-    @media only screen and (min-width: 576px){ 
+    @media only screen and (min-width: 576px) { 
         .body {
             display: grid;
             background-color: teal;

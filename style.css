@@ -1,0 +1,187 @@
+
+   
+ 
+
+
+input {
+    width: 70px;
+    height: 20px;
+}
+
+.header {
+    background: lavender;
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: 50px 50px;
+    grid-template-areas:  
+    "brand brand"
+    "global tools";
+}
+
+@media only screen and (min-width: 576px) {
+.header {
+    background: lavender;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas:  
+    "global brand tools";    
+}}
+.brand {
+    grid-area: brand;
+    font-size: 13px;
+    text-align: center;
+    color: wheat;
+    border-style: double;
+    border-radius: 25px;
+    border-color: wheat;
+    background-color: teal;
+
+}
+.global {
+    grid-area: global;
+
+}
+.tools {
+    grid-area: tools;
+    padding: 10px;
+      
+}
+
+
+.container {
+    background: lavender;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px 10px;
+    grid-template-areas:
+      "ha"
+      "af"
+      "ad"
+      "al";}
+
+ @media only screen and (min-width: 576px) {
+    .container {
+        background: lavender;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat (2, auto);
+        grid-template-areas:
+          "hero"
+          "body";}
+}
+@media only screen and (min-width: 576px) {    
+    .hero {
+        display: grid;
+        background-color: teal;
+        grid-area: hero;
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        grid-template-areas: 
+        "hf"
+        "ha";
+    }}
+
+    .herof {
+        grid-area: hf;
+        display: none;
+
+  }
+
+    @media only screen and (min-width: 576px){
+    .herof {
+        grid-area: hf;
+        background-color: lavender;
+        display: grid;
+        text-align: center;
+        font-size: 5vw;
+        
+    }   
+        }
+          
+
+    .heroa {
+        grid-area: ha;
+        background-color: teal;
+        text-align: center;
+        font-size: 7vw;
+        margin-bottom: 10px;
+      
+      }
+
+    @media only screen and (min-width: 576px){ 
+        .body {
+            display: grid;
+            background-color: teal;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto 2fr 1fr;
+            grid-area: body;
+            grid-template-areas:
+            "af adver"
+            "al al"
+            "sdb sdb";
+        }
+    }
+    
+    .artf {
+        background-color: wheat;
+        grid-area: af;
+        font-size: 3vw;
+                
+    }
+    .artl {
+        background-color: wheat;
+        grid-area: al;
+        font-size: 3vw;
+                
+    }
+    .ad-1 {
+        grid-area: ad;
+        margin: 10px 10px 10px 10px;
+        background-color: lavender;
+       
+    }
+
+    @media only screen and (min-width: 576px) {
+    .ad-1 {
+        grid-area: ad;
+        display: none;
+        }   
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+              
+    }
+    .adver {
+        background-color: lavender;
+        grid-area: adver;
+        display: none;
+    }
+    @media only screen and (min-width: 576px) {  
+        .adver {
+            background-color: lavender;
+            display: grid;
+            grid-area: adver;   
+    }}
+
+    .sidebar {
+        grid-area:sdb;
+        display: none;
+    }
+
+    @media only screen and (min-width: 576px) {
+    .sidebar {
+        grid-area: sdb;
+        display: grid;
+        background-color: teal;              
+    }}
+
+    .footer {
+    background-color: lavender;
+    padding-left: 20px;
+    font-size: 3vw;
+    }

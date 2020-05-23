@@ -84,7 +84,8 @@ input {
         grid-template-areas: 
         "hf"
         "ha";
-    }}
+        }
+    }
 
     .herof {
         grid-area: hf;

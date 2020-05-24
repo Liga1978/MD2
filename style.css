@@ -94,7 +94,6 @@ a:hover {
             display: grid;
             background-color: teal;
             grid-area: hero;
-            justify-items: stretch;
             grid-template-rows: auto;
             grid-template-columns: 45% 25% 30%;
             grid-template-areas: 
@@ -200,7 +199,6 @@ a:hover {
         .adver3 {
             display: grid;
             background-color: teal;
-            align-self: center;
             justify-self: left;
             grid-area: adver3;
         }

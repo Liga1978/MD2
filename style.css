@@ -179,7 +179,8 @@ input {
     .sidebar {
         grid-area: sdb;
         display: grid;
-        background-color: teal;              
+        background-color: teal;    
+        font-size: 3vw;          
     }}
 
     .footer {

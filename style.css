@@ -1,8 +1,4 @@
 
-   
- 
-
-
 input {
     max-width: 75%;
     height: 20%;
@@ -12,7 +8,7 @@ input {
     background: lavender;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 75px 50px;
+    grid-template-rows: 50% 50%;
     grid-template-areas:  
     "brand brand"
     "global tools";
@@ -24,6 +20,7 @@ input {
     display: grid;
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: 100%;
+    column-gap: 10px;
     grid-template-areas:  
     "global brand tools";    
 }}
@@ -38,19 +35,20 @@ input {
     border-color: wheat;
     background-color: teal;
     font-size: 3vw;
-   
-    
-   
+ 
 }
 .global {
     grid-area: global;
     align-self: baseline;
     position: relative;
+    font-size: 3vw;
+    padding-top: 10px;
 }
 .tools {
     grid-area: tools;
     align-self: baseline;
     position: relative;
+    padding-top: 10px;
 }
 
 a:hover {
@@ -62,24 +60,20 @@ a:hover {
     background: lavender;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 75px auto auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas:
-      "ha"
-      "af"
-      "ad"
-      "al";}
+      "hero"
+      "body";
+    }
 
- @media only screen and (min-width: 576px) {
-    .container {
-        background: lavender;
+    .hero {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: auto auto;
-        grid-template-areas:
-          "hero"
-          "body";
-        }
+        grid-template-rows: 100%;
+        grid-template-areas: 
+          "ha";
     }
+
  @media only screen and (min-width: 576px) {    
     .hero {
         display: grid;
@@ -98,7 +92,6 @@ a:hover {
     .herof {
         grid-area: hf;
         display: none;
-
   }
 
     @media only screen and (min-width: 576px) {
@@ -108,19 +101,26 @@ a:hover {
         display: grid;
         text-align: center;
         font-size: 5vw;
-        
     }   
         }
-          
 
     .heroa {
         grid-area: ha;
         background-color: teal;
         text-align: center;
         font-size: 7vw;
-        margin-bottom: 20px;
-      
       }
+
+    .body {
+        display: grid;
+        background-color: teal;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "af"
+        "ad"
+        "al";
+    }
 
     @media only screen and (min-width: 576px) { 
         .body {
@@ -146,13 +146,11 @@ a:hover {
         background-color: wheat;
         grid-area: al;
         font-size: 3vw;
-                
     }
     .ad-1 {
         grid-area: ad;
         margin: 10px 10px 10px 10px;
         background-color: lavender;
-       
     }
 
     @media only screen and (min-width: 576px) {
@@ -161,6 +159,7 @@ a:hover {
         display: none;
         }   
     }
+
     img {
         max-width: 100%;
         height: auto;

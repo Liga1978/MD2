@@ -45,12 +45,12 @@ input {
 .global {
     grid-area: global;
     align-self: baseline;
-
+    position: relative;
 }
 .tools {
     grid-area: tools;
     align-self: baseline;
-    
+    position: relative;
 }
 
 a:hover {

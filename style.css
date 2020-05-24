@@ -89,6 +89,20 @@ a:hover {
         }
     }
 
+    @media only screen and (min-width: 992px) {
+        .hero {
+            display: grid;
+            background-color: teal;
+            grid-area: hero;
+            justify-items: stretch;
+            grid-template-rows: auto;
+            grid-template-columns: 45% 25% 30%;
+            grid-template-areas: 
+            "hf ha adver3";
+        }
+
+    }
+
     .herof {
         grid-area: hf;
         display: none;
@@ -108,7 +122,7 @@ a:hover {
         grid-area: ha;
         background-color: teal;
         text-align: center;
-        font-size: 7vw;
+        font-size: 5vw;
       }
 
     .body {
@@ -126,7 +140,7 @@ a:hover {
         .body {
             display: grid;
             background-color: teal;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 70% 30%;
             grid-template-rows: auto 2fr 1fr;
             grid-area: body;
             grid-template-areas:
@@ -136,6 +150,19 @@ a:hover {
         }
     }
     
+    @media only screen and (min-width: 992px) { 
+        .body {
+            display: grid;
+            background-color: wheat;
+            grid-template-columns: 30% 40% 30%;
+            grid-template-rows: auto;
+            column-gap: 5px;
+            grid-area: body;
+            grid-template-areas:
+            "af al sdb";
+        }
+    }
+
     .artf {
         background-color: wheat;
         grid-area: af;
@@ -163,8 +190,22 @@ a:hover {
     img {
         max-width: 100%;
         height: auto;
-              
+            }
+
+    .adver3 {
+        display: none;
     }
+    
+    @media only screen and (min-width: 992px) { 
+        .adver3 {
+            display: grid;
+            background-color: teal;
+            align-self: center;
+            justify-self: left;
+            grid-area: adver3;
+        }
+    }
+   
     .adver {
         background-color: lavender;
         grid-area: adver;
@@ -176,6 +217,12 @@ a:hover {
             display: grid;
             grid-area: adver;   
     }}
+
+    @media only screen and (min-width: 992px) { 
+        .adver {
+            display: none;
+        }
+    }
 
     .sidebar {
         grid-area:sdb;
@@ -190,7 +237,7 @@ a:hover {
         font-size: 3vw;          
     }}
 
-    .footer {
+      .footer {
     background-color: lavender;
     padding-left: 20px;
     }

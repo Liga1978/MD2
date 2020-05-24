@@ -4,14 +4,14 @@
 
 
 input {
-    width: 70px;
+    max-width: 75%;
     height: 20px;
 }
 
 .header {
     background: lavender;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 50px 50px;
     grid-template-areas:  
     "brand brand"
@@ -22,24 +22,26 @@ input {
 .header {
     background: lavender;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 25% 50% 25%;
     grid-template-rows: 100px;
     grid-template-areas:  
     "global brand tools";    
 }}
 .brand {
+    font-size: 2vw;
     grid-area: brand;
-    font-size: 13px;
     text-align: center;
     color: wheat;
     border-style: double;
     border-radius: 25px;
     border-color: wheat;
     background-color: teal;
-
+    
+   
 }
 .global {
     grid-area: global;
+    
 
 }
 .tools {
